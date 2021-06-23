@@ -26,11 +26,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "node_modules/@deprecat3d/weather-now-component-library/dist/component-library/assets/images"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "node_modules/@deprecat3d/weather-now-component-library/dist/component-library/component-library.css",
               "src/styles.scss"
