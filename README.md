@@ -49,7 +49,7 @@ E o projeto, propriamente dito
   npm start
 ```
 
-Tenho quase certeza que ele vai levantar na porta 4200, mas fique atento aos logs de compilação. A biblioteca de componentes vai subir na 3737.
+Tenho quase certeza que ele vai levantar na porta 4200, mas fique atento aos logs de compilação. Se você rodar em paralelo [a biblioteca de componentes](https://github.com/deprecat3d/weather-now-component-library) ele vai subir na 3737.
 
 ## Poderia ser melhor
 
