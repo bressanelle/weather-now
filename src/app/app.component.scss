@@ -1,4 +1,16 @@
 main {
   background: #f1f1f1;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  section.content {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex-wrap: wrap;
+  }
 }

@@ -1,13 +1,39 @@
 <main>
-  <weathernow-topbar></weathernow-topbar>
-  <weathernow-card
-    location="Nuuk, GL"
-    loading="false"
-    temperature-color="blue"
-    temperature="-4°"
-    humidity="75%"
-    pressure="892hPa"
-    lastUpdate="Updated at 02:48:27 PM"
-  ></weathernow-card>
-  <h2>test</h2>
+  <section class="content">
+    <weathernow-card
+      location="{{ this.locales[0].city }}, {{ this.locales[0].country }}"
+      [loading]="this.locales[0].loading"
+      [temperatureColor]="this.locales[0].temperatureColor"
+      [temperature]="this.locales[0].temperature"
+      [humidity]="this.locales[0].humidity"
+      [pressure]="this.locales[0].pressure"
+      [lastUpdate]="this.locales[0].lastUpdate"
+      [error]="this.locales[0].error"
+    >
+    </weathernow-card>
+    <weathernow-card
+      location="{{ this.locales[1].city }}, {{ this.locales[1].country }}"
+      [loading]="this.locales[1].loading"
+      is-active-by-default="true"
+      [temperatureColor]="this.locales[1].temperatureColor"
+      [temperature]="this.locales[1].temperature"
+      [humidity]="this.locales[1].humidity"
+      [pressure]="this.locales[1].pressure"
+      [lastUpdate]="this.locales[1].lastUpdate"
+      [error]="this.locales[1].error"
+    >
+    </weathernow-card>
+    <weathernow-card
+      location="{{ this.locales[2].city }}, {{ this.locales[2].country }}"
+      [loading]="this.locales[2].loading"
+      [temperatureColor]="this.locales[2].temperatureColor"
+      [temperature]="this.locales[2].temperature"
+      [humidity]="this.locales[2].humidity"
+      [pressure]="this.locales[2].pressure"
+      [lastUpdate]="this.locales[2].lastUpdate"
+      [error]="this.locales[2].error"
+    >
+    </weathernow-card>
+  </section>
 </main>
+<weathernow-topbar></weathernow-topbar>
