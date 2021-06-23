@@ -9,6 +9,7 @@
       [pressure]="this.locales[0].pressure"
       [lastUpdate]="this.locales[0].lastUpdate"
       [error]="this.locales[0].error"
+      (retryEvent)="this.onRetryRequest(this.locales[0].city)"
     >
     </weathernow-card>
     <weathernow-card
@@ -21,6 +22,7 @@
       [pressure]="this.locales[1].pressure"
       [lastUpdate]="this.locales[1].lastUpdate"
       [error]="this.locales[1].error"
+      (retryEvent)="this.onRetryRequest(this.locales[1].city)"
     >
     </weathernow-card>
     <weathernow-card
@@ -32,6 +34,7 @@
       [pressure]="this.locales[2].pressure"
       [lastUpdate]="this.locales[2].lastUpdate"
       [error]="this.locales[2].error"
+      (retryEvent)="this.onRetryRequest(this.locales[2].city)"
     >
     </weathernow-card>
   </section>

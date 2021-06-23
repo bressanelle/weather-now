@@ -24,7 +24,7 @@ interface Locale {
 export class AppComponent implements OnInit {
   public locales: Locale[] = [
     {
-      city: 'Nusdfsdfasdfasdfasdfasduk',
+      city: 'Nuuk',
       country: 'GL',
       loading: true,
       error: false,
@@ -51,6 +51,16 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.getWeatherConditionsByLocales();
     setInterval(() => this.getWeatherConditionsByLocales(), 600000);
+  }
+
+  public onRetryRequest(city: string) {
+    const index = this.locales.findIndex((locale) => locale.city === city);
+    this.locales[index] = {
+      ...this.locales[index],
+      ...{ loading: true, error: false },
+    };
+
+    this.getWeatherConditionsByLocales();
   }
 
   private getWeatherConditionsByLocales() {
